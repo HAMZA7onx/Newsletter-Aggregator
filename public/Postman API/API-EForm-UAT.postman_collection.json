@@ -1,0 +1,588 @@
+{
+	"info": {
+		"_postman_id": "2a67f8e1-95c3-4c3f-927b-07a7a061154d",
+		"name": "API-EForm-UAT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10368973",
+		"_collection_link": "https://grey-meteor-321371.postman.co/workspace/New-Team-Workspace~a0dee0a1-bfb3-47e4-a694-329a9b2da5bc/collection/10368973-2a67f8e1-95c3-4c3f-927b-07a7a061154d?action=share&source=collection_link&creator=10368973"
+	},
+	"item": [
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI1IiwianRpIjoiN2M0NTY5MGYyNWMwYjQ5M2NmODQ3MTFiODZlMWZmNWMxYzMxNDZlMTU0NWVkNmU3YTdkZTUzZDQ5MGQzNmQ2M2EzNGUxYWMyMzE2OTgzZDciLCJpYXQiOjE2NDIzOTEwMDAsIm5iZiI6MTY0MjM5MTAwMCwiZXhwIjoxNjczOTI3MDAwLCJzdWIiOiIxMjc4Iiwic2NvcGVzIjpbXX0.XNxZitf22PtVYxMDu8R96PGJgP_3QPppWICZe7Xa-pp-OBMWUCEtSm5wuX14Imw-Dlr1AOxbhUDSbKOxnHcummUOmRxy4EtjPd04vuJ2P4v-VEBX5qYnDAvgXJ5pS8RI1T7c_0jIBmfttTYYh4gTYR3p5n5GirjPP3jjwlAFJ62ZwUBnImxFo-8HOZodDueyPGwF8hgbcFwfjNGsd4cGNQhbx_dxN9WZXMKe4tTMIyc1m3Pf5tXkd5iMawrwxGbHjqX_aCriC4igR7SnLUNhHrO7ALaMzGIX9sOFnS__ClEfWYbIyyrBro1BKcsbrbc7DvVnD3hFowfOZfK_y2U5v39t1hfdp80_PiQS7ALsqIOYCaDfSOHJpfOv5O7yRVeOADFBRPFlZGgFWFP_5zqTLja4n785foBoqd2puqsj6pjkP0FnvOTEtVwwG-ANtJwaz1fDq5ackAZDzIsG9jVQ06uGT2PNQvhuDAdY6IDtJ0T31jWTsQwJn-YpLEFsrYOPCQaxN_8aUa4wabQtP0_Yeb86qOB_OKsfKHHH6RFplPwCHRdrq7VD7UIggcPyEZT9ZZDRFKVdO8PRPwSJD7jDY_lEU_5lTUWkjPtXhRJ6Zmin_0RZ0UN8jcU-sLBfWdVXb1kuaFAkbQbRvFYCmcMAaJAsE9TJPNRVpu36TM1JSYI",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "chhen.sreyroth",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "Hello@123",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login V2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI1IiwianRpIjoiN2M0NTY5MGYyNWMwYjQ5M2NmODQ3MTFiODZlMWZmNWMxYzMxNDZlMTU0NWVkNmU3YTdkZTUzZDQ5MGQzNmQ2M2EzNGUxYWMyMzE2OTgzZDciLCJpYXQiOjE2NDIzOTEwMDAsIm5iZiI6MTY0MjM5MTAwMCwiZXhwIjoxNjczOTI3MDAwLCJzdWIiOiIxMjc4Iiwic2NvcGVzIjpbXX0.XNxZitf22PtVYxMDu8R96PGJgP_3QPppWICZe7Xa-pp-OBMWUCEtSm5wuX14Imw-Dlr1AOxbhUDSbKOxnHcummUOmRxy4EtjPd04vuJ2P4v-VEBX5qYnDAvgXJ5pS8RI1T7c_0jIBmfttTYYh4gTYR3p5n5GirjPP3jjwlAFJ62ZwUBnImxFo-8HOZodDueyPGwF8hgbcFwfjNGsd4cGNQhbx_dxN9WZXMKe4tTMIyc1m3Pf5tXkd5iMawrwxGbHjqX_aCriC4igR7SnLUNhHrO7ALaMzGIX9sOFnS__ClEfWYbIyyrBro1BKcsbrbc7DvVnD3hFowfOZfK_y2U5v39t1hfdp80_PiQS7ALsqIOYCaDfSOHJpfOv5O7yRVeOADFBRPFlZGgFWFP_5zqTLja4n785foBoqd2puqsj6pjkP0FnvOTEtVwwG-ANtJwaz1fDq5ackAZDzIsG9jVQ06uGT2PNQvhuDAdY6IDtJ0T31jWTsQwJn-YpLEFsrYOPCQaxN_8aUa4wabQtP0_Yeb86qOB_OKsfKHHH6RFplPwCHRdrq7VD7UIggcPyEZT9ZZDRFKVdO8PRPwSJD7jDY_lEU_5lTUWkjPtXhRJ6Zmin_0RZ0UN8jcU-sLBfWdVXb1kuaFAkbQbRvFYCmcMAaJAsE9TJPNRVpu36TM1JSYI",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "soeng.souy",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "o/QpC2aYvw/I6jmx0zKCshmdKs+rHh2eZreQJc2RagjAcrwympGYukQofypHHLLQBmL32ZvUdkfxmFH7yWz1tAUs160MV9HGD8UiYEUJhS+qqMRh6ZdWqjgaweG1XYa2xpz5FwFEdyjRD5kDDOayWaJyFLQ5+dGQCarMS6YpIHJLamk4Lg4LLf9S7Wp60O1hHmNkzlhocT1JyKYc5iNZNnYq+sfHjq9TgjC7A+6dq310MyjHySR44Jtc5op45XCWx1R7j96RDfCipb7Di2j/eTnq9M0Wdn73vLpDehWCnX7BMUH+OzYiPUDjkMsJ7ktguNINqLiPFzlH/bqU9CdB+w==",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://uateformapi.princebank.com.kh/api/login-mobile-v2",
+							"protocol": "https",
+							"host": [
+								"uateformapi",
+								"princebank",
+								"com",
+								"kh"
+							],
+							"path": [
+								"api",
+								"login-mobile-v2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Medical Claim Form",
+			"item": [
+				{
+					"name": "medicalclaim_save",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiYWRkY2UyZDBiNjRhYjk2MjdiNmM3NDMwZjIyMTdmMmE1NjQwYmNhMWY4MWE0ODU2NTY0NDk2NTllOGU3YjllNGVhODgxNmVhNGMxODAyYjYiLCJpYXQiOjE2NjE0NzcxODcsIm5iZiI6MTY2MTQ3NzE4NywiZXhwIjoxNjkzMDEzMTg3LCJzdWIiOiIxMTI3Iiwic2NvcGVzIjpbXX0.XFcThmZU63ZQzO5p9ndsvAUFf-wmYLJwjSuSdUFTectdmnbImIALEc5Bd5j9NNvEO2qzaSG6HMNPNwaZdKPzFULZm9Uvv4LDj0bJ5Y7zeZjVuEH2OFiN9ye3sWi7pcj6Upa4m8WGhFP-80W51dAZDaytKjyzwDRzIUvmYj3peqlmecq7Eje30UtuvTBJYpGNqBCKSyu1EbpfsHlI0UhfDOt48XpHe4vpQDepj_HNzsGaYfMO3moOP436BEFPtw55G-C5EHzZDPPaDFLRL07NU-XEMtfM8uf-SomMbLbk7ZZR2m56qcea6lMTMIxaCi5TPCmZNZ9JLCJT8Gsvn3caOeZElc4djUPV676-PJUXocuL5GOOJywr0wOZicywk1sWgJfPGItLpvAgrq1kf5Q2mz7cQqv0r9bJIkNrl50lRKmp-70QR0Yt2c92tjk5MPy7A7lu29UzY4-8lNZ2uTFrLYqxjKWN62QJ3mAEDXs09gafRtRxor_PTDbLin32rlN5v9QCfVSPOnjsZMPyu5CRymAlmTxnnXUDlzeAIELIaVA4cm7nryMrQnyKM9x8cV8Jmj-wjo8EESznUsTTJoKdFKbYYHpxVk4BvUn8cPy-jnRraCJ3ZO4VIxxnhJtze_SCi0qzhTysakpf8yyeGC_stHegLEmiS2xEwP8t-n6rWAY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "reqbyname",
+									"value": "SOENG SOUY",
+									"type": "text"
+								},
+								{
+									"key": "reqbypost",
+									"value": "Kok Je Dey",
+									"type": "text"
+								},
+								{
+									"key": "reqbybranch",
+									"value": "Hear Office",
+									"type": "text"
+								},
+								{
+									"key": "status_req",
+									"value": "Open",
+									"type": "text"
+								},
+								{
+									"key": "reqemail",
+									"value": "soeng.souy@princebank.com.kh",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "Soeng",
+									"type": "text"
+								},
+								{
+									"key": "firstname",
+									"value": "Souy",
+									"type": "text"
+								},
+								{
+									"key": "employee_id",
+									"value": "01596",
+									"type": "text"
+								},
+								{
+									"key": "division",
+									"value": "Digital Banking",
+									"type": "text"
+								},
+								{
+									"key": "employee_id_for",
+									"value": "01506",
+									"type": "text"
+								},
+								{
+									"key": "employee_name",
+									"value": "Tav Minh Ser",
+									"type": "text"
+								},
+								{
+									"key": "division_for",
+									"value": "Digital Banking",
+									"type": "text"
+								},
+								{
+									"key": "probation_end_date",
+									"value": "10-05-2020",
+									"type": "text"
+								},
+								{
+									"key": "bank_account_number",
+									"value": "00011111111",
+									"type": "text"
+								},
+								{
+									"key": "position_for",
+									"value": "Kok Je Dey",
+									"type": "text"
+								},
+								{
+									"key": "branch_for",
+									"value": "Head Office",
+									"type": "text"
+								},
+								{
+									"key": "line_manager",
+									"value": "Kenha Channa",
+									"type": "text"
+								},
+								{
+									"key": "request_date",
+									"value": "26-08-2022",
+									"type": "text"
+								},
+								{
+									"key": "total_in_current_year",
+									"value": "14",
+									"type": "text"
+								},
+								{
+									"key": "date_of_treatment",
+									"value": "26-Aug-2022",
+									"type": "text"
+								},
+								{
+									"key": "hospital_name",
+									"value": "Kak Dara",
+									"type": "text"
+								},
+								{
+									"key": "annual_medical_claim",
+									"value": "150",
+									"type": "text"
+								},
+								{
+									"key": "available_balance",
+									"value": "122",
+									"type": "text"
+								},
+								{
+									"key": "request_for_treatment",
+									"value": "Test",
+									"type": "text"
+								},
+								{
+									"key": "contact_number",
+									"value": "46784334",
+									"type": "text"
+								},
+								{
+									"key": "doctor_consultation_fee",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "nurse_fee",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "ultrasound_eco",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "sanning",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "ecg",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "laboratory_test",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "subtotal1",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "medicines",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "subtotal2",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "subtotal1and2",
+									"value": "14",
+									"type": "text"
+								},
+								{
+									"key": "diagnostic_consultation",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "medical_expenses",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "total_amount_to_be_paid",
+									"value": "14",
+									"type": "text"
+								},
+								{
+									"key": "fileupload[0]",
+									"type": "file",
+									"src": "/C:/Users/soeng.souy/Downloads/photo_2022-08-25_10-42-50.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://uateformapi.princebank.com.kh/api/medicalclaim/save",
+							"protocol": "https",
+							"host": [
+								"uateformapi",
+								"princebank",
+								"com",
+								"kh"
+							],
+							"path": [
+								"api",
+								"medicalclaim",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get list sum",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiNTc0YjU2Zjk5ZmJmZjNiZTY5MTM1ZGNjYThlZjI4YjE1MTRkODc0OThlMmI1MWU3Njk5ZGYyZGE3YTBlMWU4ZDE2ZjY3ODVhZTAxOThmN2EiLCJpYXQiOjE2NjE3MzcyMzUsIm5iZiI6MTY2MTczNzIzNSwiZXhwIjoxNjkzMjczMjM1LCJzdWIiOiIxMTI3Iiwic2NvcGVzIjpbXX0.FfMKlop8L1ll0GETWgrpOcvQVMt9Ok_BOHXHw7JVTqUBos5mDhFn5amBXdyoAWK8zs150BTGchGpg5xdp1dKOrgNHzLP9K3vhofp4XYQhP3XRweP3HzoXCOMsYzTk0EINY_ws5Y9nX9ISqNQaUQjOs8tKBFJZFgmx0EWMVq-DAklK6qtJbJM_Y0yBFV63uR0wQnOKmh39hs23dXwDwI88MwGuym5dsrpsTMBLY3pKdmPaerOhV4VzAmoCSsqXhU6jS3cqTM-qWAOn8FPSDE8P1zebCclL7PuyZbuX4Y3XDBjOzAciBWPmRnvpHf1_F0ACB6p0J94rd7syZen6ZuEvFl1WvtxWV4VGzVq9EuidqphleQfK_VrAHRHInuiuEKl05-EdOVCeLN4JBklx649PXe_tUyFqrQvSK3LPejRHdCjjAEHwLSy8yoXLTEB0vrTAoirO6vGIfriZppHjZ3DnlbSWUZyZGNegzeuVQXQy2X-PceVijI8X7tf0QWV9n_epqKgS82GU2oMahq1mL9SH7q4-117HSMoy_PxrYgnu7zfPbzBlvKyFiPS5h24Ll4mr1cyw2XHWl-uTOUcmsbGEPuFdA5qHwHcg7_rs9BQT59y5uyPNX04TetwlEzxvOHUNqmRYLyg9mY1Ze3iX_1NPoEsOhvgPIBni2W1m7bJPVg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://uateformapi.princebank.com.kh/api/medicalclaim/get?staff_id=01506",
+							"protocol": "https",
+							"host": [
+								"uateformapi",
+								"princebank",
+								"com",
+								"kh"
+							],
+							"path": [
+								"api",
+								"medicalclaim",
+								"get"
+							],
+							"query": [
+								{
+									"key": "staff_id",
+									"value": "01506"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view_detail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiNTc0YjU2Zjk5ZmJmZjNiZTY5MTM1ZGNjYThlZjI4YjE1MTRkODc0OThlMmI1MWU3Njk5ZGYyZGE3YTBlMWU4ZDE2ZjY3ODVhZTAxOThmN2EiLCJpYXQiOjE2NjE3MzcyMzUsIm5iZiI6MTY2MTczNzIzNSwiZXhwIjoxNjkzMjczMjM1LCJzdWIiOiIxMTI3Iiwic2NvcGVzIjpbXX0.FfMKlop8L1ll0GETWgrpOcvQVMt9Ok_BOHXHw7JVTqUBos5mDhFn5amBXdyoAWK8zs150BTGchGpg5xdp1dKOrgNHzLP9K3vhofp4XYQhP3XRweP3HzoXCOMsYzTk0EINY_ws5Y9nX9ISqNQaUQjOs8tKBFJZFgmx0EWMVq-DAklK6qtJbJM_Y0yBFV63uR0wQnOKmh39hs23dXwDwI88MwGuym5dsrpsTMBLY3pKdmPaerOhV4VzAmoCSsqXhU6jS3cqTM-qWAOn8FPSDE8P1zebCclL7PuyZbuX4Y3XDBjOzAciBWPmRnvpHf1_F0ACB6p0J94rd7syZen6ZuEvFl1WvtxWV4VGzVq9EuidqphleQfK_VrAHRHInuiuEKl05-EdOVCeLN4JBklx649PXe_tUyFqrQvSK3LPejRHdCjjAEHwLSy8yoXLTEB0vrTAoirO6vGIfriZppHjZ3DnlbSWUZyZGNegzeuVQXQy2X-PceVijI8X7tf0QWV9n_epqKgS82GU2oMahq1mL9SH7q4-117HSMoy_PxrYgnu7zfPbzBlvKyFiPS5h24Ll4mr1cyw2XHWl-uTOUcmsbGEPuFdA5qHwHcg7_rs9BQT59y5uyPNX04TetwlEzxvOHUNqmRYLyg9mY1Ze3iX_1NPoEsOhvgPIBni2W1m7bJPVg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://uateformapi.princebank.com.kh/api/medicalclaim/detail?recordid=REQ_0000023630",
+							"protocol": "https",
+							"host": [
+								"uateformapi",
+								"princebank",
+								"com",
+								"kh"
+							],
+							"path": [
+								"api",
+								"medicalclaim",
+								"detail"
+							],
+							"query": [
+								{
+									"key": "recordid",
+									"value": "REQ_0000023630"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "get-task-list",
+			"item": [
+				{
+					"name": "Get Task List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyNCIsImp0aSI6IjlmZGQ4NTQ1ZjJmNWY1YjBjNjU3NDIyYjg0Njk2MjM3YzY1YjA1NWNiMDE5ZTQwOGQ5YjE5MDIxODY2OTY5NThiMjAyYWYzMmMwMTU0MWNjIiwiaWF0IjoxNjAyMDY2NDMwLCJuYmYiOjE2MDIwNjY0MzAsImV4cCI6MTYzMzYwMjQzMCwic3ViIjoiMzIiLCJzY29wZXMiOltdfQ.PJctpDnlQJhsnsDg8eGLYI5_eV4cVyI_MMnxiuE0E1RCjk2YArpAF6_NUF6qR2rZOjqebdLbMOAa4bdlAYZzQ0yUuVZ0mOY20i3Q3hx5rs4EDYohV-KYXHsEFPMPPLKnMZ-Nvk8RNYvXlmRKZ48ZcMwHlorgRFxKQs6je1_6nFa9UeWAD4vNu3MZjpTuWmjoQU0NrFxWWilzckOxBZ-7KLXZ--lrnyfa_3_xWSkDp-PCLfQ0dNDs29y5CkD8PwPAS2iJ48TwQhyP9l3ZcJ0iNOZE2B7n114NsilPxYhix4mr1AL9eskQYS7k1BxLGL1phrwyC2aUTBR64C5fyuYiSSHhNzr6jVUhHsdIwELq2yXVXhrZmKJIbcajAf1Mq3elS7E32_BYC3REAb0WRQe34TYzcOE6rejg9f_LOV4W-VmgV9sI-Gu0xvc5VEDHtUl9fKXylyHAHPGQ9JPZASZZ7yoBeqgZbRtuWXCGawDnumL0FzRMbv5s-n-wPCF5PYZ4rUxptQLxMtqmjnHiST-xnssr0_y9gOX8uqn41tmpJ5geTnyRK5tjMcSnt8JVNwOTH4PQ9hrQpS1pnurorOmU5NOTz3UPmCg92tIy6qWUcu4fvkJ6ePFJVVpQ92bMIr9NVXk6Fo456ZRqFLw_QiD4_QH4IVHRTml9ltuws2ZOjs8",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://uateformapi.princebank.com.kh/api/gettasklisting?email=jennifer.lee@usct.local&page=1",
+							"protocol": "https",
+							"host": [
+								"uateformapi",
+								"princebank",
+								"com",
+								"kh"
+							],
+							"path": [
+								"api",
+								"gettasklisting"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "jennifer.lee@usct.local"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user_list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiYWRkY2UyZDBiNjRhYjk2MjdiNmM3NDMwZjIyMTdmMmE1NjQwYmNhMWY4MWE0ODU2NTY0NDk2NTllOGU3YjllNGVhODgxNmVhNGMxODAyYjYiLCJpYXQiOjE2NjE0NzcxODcsIm5iZiI6MTY2MTQ3NzE4NywiZXhwIjoxNjkzMDEzMTg3LCJzdWIiOiIxMTI3Iiwic2NvcGVzIjpbXX0.XFcThmZU63ZQzO5p9ndsvAUFf-wmYLJwjSuSdUFTectdmnbImIALEc5Bd5j9NNvEO2qzaSG6HMNPNwaZdKPzFULZm9Uvv4LDj0bJ5Y7zeZjVuEH2OFiN9ye3sWi7pcj6Upa4m8WGhFP-80W51dAZDaytKjyzwDRzIUvmYj3peqlmecq7Eje30UtuvTBJYpGNqBCKSyu1EbpfsHlI0UhfDOt48XpHe4vpQDepj_HNzsGaYfMO3moOP436BEFPtw55G-C5EHzZDPPaDFLRL07NU-XEMtfM8uf-SomMbLbk7ZZR2m56qcea6lMTMIxaCi5TPCmZNZ9JLCJT8Gsvn3caOeZElc4djUPV676-PJUXocuL5GOOJywr0wOZicywk1sWgJfPGItLpvAgrq1kf5Q2mz7cQqv0r9bJIkNrl50lRKmp-70QR0Yt2c92tjk5MPy7A7lu29UzY4-8lNZ2uTFrLYqxjKWN62QJ3mAEDXs09gafRtRxor_PTDbLin32rlN5v9QCfVSPOnjsZMPyu5CRymAlmTxnnXUDlzeAIELIaVA4cm7nryMrQnyKM9x8cV8Jmj-wjo8EESznUsTTJoKdFKbYYHpxVk4BvUn8cPy-jnRraCJ3ZO4VIxxnhJtze_SCi0qzhTysakpf8yyeGC_stHegLEmiS2xEwP8t-n6rWAY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/userlist?page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"userlist"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UnlockResetPWD",
+			"item": [
+				{
+					"name": "view_unlockresetwpwd",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiNDBiNTZkMDBmMGMyOWJmZmM2NWM5YzFhMzJiYjY4NWYzYTE5OWQ3NTdkNzk3OGFjMmVhNWNkNjU1MTFmNGM3Y2MwOTA0YzRhOWUxMjQwOTkiLCJpYXQiOjE2OTgyOTMwMzIuMzg0OTksIm5iZiI6MTY5ODI5MzAzMi4zODUsImV4cCI6MTcyOTkxNTQzMi4yMDY1MjQsInN1YiI6IjExMjciLCJzY29wZXMiOltdfQ.nUy3HLcFi15Q4LIK3jsS-a84bpNLRjiovCVdyTvBY2hqUOR8rMYwgGA7fo-KLcaKBPuj7iqNPGx8BAf_-zW-EdcWR64clvYeGuJqXSbQNahAEynNdsMaGB-_o0B05O81na0u_iEaTv6haTpGrgv_4aTQziA4vLkiifmECKUD-JVb5IKpArujkx09nl4BFY3YgyK_EeBsQX5FFIFYrgY9hn7cEEPykSFBG-BRWQj8hpA7oPWiuZD67UVDX2qQkb_DsYsXRCwR4vcq2QXVCUvofUqg6jWLJp52c6ZQy0U9mi9tbs0cDiY-Muhe9qvjm5PCgCGhenSb8dZ3oclEHurDLZpbUF0gMijOdXzAUOTmy7vwkkGkQqO2epNJy6hsTNycrQPfR_hSSCbcr9qca9Yy5OBz8GFz-u9csgo3YxC5O3QJBnLKLsWxMKJr4CAboGsNPpJLlE0OeQR-aEXPdMvcXcvOiVzBi467zG96iEk1-oAl1YSURmiqqoQswudjdEZ5s6rpTAtkag0Ugyh9YlCppwmwGxZcUsIoahw8jXsGxQ0wP1K8PuygOVGH2FwoQtSZNCz0UGkBWS4EsV0IBrJb1cD6e-uqekubM--pZ4HPMrMtXtT-PrNwJvJdkco0msyc-tbtQ1UW-UDeS_7N0itoblrg_hhyXclk4LTL7uuJoR8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://uateformapi.princebank.com.kh/api/unlockresetpwd/detail?rec_id=REQ_0000056391&email=soeng.souy@princebank.com.kh&form_id=4",
+							"protocol": "https",
+							"host": [
+								"uateformapi",
+								"princebank",
+								"com",
+								"kh"
+							],
+							"path": [
+								"api",
+								"unlockresetpwd",
+								"detail"
+							],
+							"query": [
+								{
+									"key": "rec_id",
+									"value": "REQ_0000056391"
+								},
+								{
+									"key": "email",
+									"value": "soeng.souy@princebank.com.kh"
+								},
+								{
+									"key": "form_id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view_unlockresetwpwdSave",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiNDBiNTZkMDBmMGMyOWJmZmM2NWM5YzFhMzJiYjY4NWYzYTE5OWQ3NTdkNzk3OGFjMmVhNWNkNjU1MTFmNGM3Y2MwOTA0YzRhOWUxMjQwOTkiLCJpYXQiOjE2OTgyOTMwMzIuMzg0OTksIm5iZiI6MTY5ODI5MzAzMi4zODUsImV4cCI6MTcyOTkxNTQzMi4yMDY1MjQsInN1YiI6IjExMjciLCJzY29wZXMiOltdfQ.nUy3HLcFi15Q4LIK3jsS-a84bpNLRjiovCVdyTvBY2hqUOR8rMYwgGA7fo-KLcaKBPuj7iqNPGx8BAf_-zW-EdcWR64clvYeGuJqXSbQNahAEynNdsMaGB-_o0B05O81na0u_iEaTv6haTpGrgv_4aTQziA4vLkiifmECKUD-JVb5IKpArujkx09nl4BFY3YgyK_EeBsQX5FFIFYrgY9hn7cEEPykSFBG-BRWQj8hpA7oPWiuZD67UVDX2qQkb_DsYsXRCwR4vcq2QXVCUvofUqg6jWLJp52c6ZQy0U9mi9tbs0cDiY-Muhe9qvjm5PCgCGhenSb8dZ3oclEHurDLZpbUF0gMijOdXzAUOTmy7vwkkGkQqO2epNJy6hsTNycrQPfR_hSSCbcr9qca9Yy5OBz8GFz-u9csgo3YxC5O3QJBnLKLsWxMKJr4CAboGsNPpJLlE0OeQR-aEXPdMvcXcvOiVzBi467zG96iEk1-oAl1YSURmiqqoQswudjdEZ5s6rpTAtkag0Ugyh9YlCppwmwGxZcUsIoahw8jXsGxQ0wP1K8PuygOVGH2FwoQtSZNCz0UGkBWS4EsV0IBrJb1cD6e-uqekubM--pZ4HPMrMtXtT-PrNwJvJdkco0msyc-tbtQ1UW-UDeS_7N0itoblrg_hhyXclk4LTL7uuJoR8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://uateformapi.princebank.com.kh/api/unlockresetpwd/detail?rec_id=REQ_0000056391&email=soeng.souy@princebank.com.kh&form_id=4",
+							"protocol": "https",
+							"host": [
+								"uateformapi",
+								"princebank",
+								"com",
+								"kh"
+							],
+							"path": [
+								"api",
+								"unlockresetpwd",
+								"detail"
+							],
+							"query": [
+								{
+									"key": "rec_id",
+									"value": "REQ_0000056391"
+								},
+								{
+									"key": "email",
+									"value": "soeng.souy@princebank.com.kh"
+								},
+								{
+									"key": "form_id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
